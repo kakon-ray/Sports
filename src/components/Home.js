@@ -45,7 +45,7 @@ export default function Home() {
               <div className="col-md-4">
                 <CardContainer
                   img={user.strSportThumb}
-                  title={user.strSpor}
+                  title={user.strSport}
                   cardDes={user.strSportDescription
                     .split("")
                     .slice(1, 100)

@@ -25,14 +25,14 @@ export default function AllSports() {
         <div className="row g-4">
           {usersNum.map((user) => (
             <React.Fragment key={user.idSport}>
-              {console.log()}
+              {console.log(user)}
               <div className="col-md-4">
                 <CardContainer
                   img={user.strSportThumb}
-                  title={user.strSpor}
+                  title={user.strSport}
                   cardDes={user.strSportDescription
                     .split("")
-                    .slice(1, 100)
+                    .slice(0, 100)
                     .join("")}
                 />
               </div>
