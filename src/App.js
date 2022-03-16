@@ -1,8 +1,15 @@
 import "./App.css";
 import Home from "./components/Home";
+import Nabar from "./components/Nav/Nabar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <Nabar />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
