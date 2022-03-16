@@ -7,6 +7,7 @@ import {
   Form,
   FormControl,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Nabar() {
@@ -31,23 +32,35 @@ export default function Nabar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto m-5 my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="/">Home</Nav.Link>
-
-            <Nav.Link href="/appointment">All Sports</Nav.Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Nav.Link href="/">Home</Nav.Link>
+            </Link>
+            <Link to="/allsports" style={{ textDecoration: "none" }}>
+              <Nav.Link href="/allsports">All Sports</Nav.Link>
+            </Link>
 
             <NavDropdown title="Other" id="navbarScrollingDropdown">
-              <Nav.Link href="/">Actiion</Nav.Link>
-
-              <Nav.Link href="/appointment">Appointment</Nav.Link>
-
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Link to="/appointment" style={{ textDecoration: "none" }}>
+                <Nav.Link href="/appointment">All Sports</Nav.Link>
+              </Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Nav.Link href="/">Home</Nav.Link>
+              </Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Nav.Link href="/">Appointment</Nav.Link>
+              </Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Nav.Link href="/">Contact</Nav.Link>
+              </Link>
             </NavDropdown>
 
             <Nav.Link href="/" disabled>
               Actiion
             </Nav.Link>
 
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Nav.Link href="/">Contact</Nav.Link>
+            </Link>
           </Nav>
           <Form className="d-flex nav-form justify-content-center">
             {show ? (
