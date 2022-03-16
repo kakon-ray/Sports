@@ -33,7 +33,7 @@ export default function Nabar() {
           <Nav className="ms-auto m-5 my-2 my-lg-0" navbarScroll>
             <Nav.Link href="/">Home</Nav.Link>
 
-            <Nav.Link href="/appointment">Appointment</Nav.Link>
+            <Nav.Link href="/appointment">All Sports</Nav.Link>
 
             <NavDropdown title="Other" id="navbarScrollingDropdown">
               <Nav.Link href="/">Actiion</Nav.Link>
