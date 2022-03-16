@@ -5,8 +5,9 @@ import Loading from "./Loading/Loading";
 import Nabar from "../components/Nav/Nabar";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import SearchResult from "./SearchResult/SearchResult";
 
-export default function Home() {
+export default function Home({ searchValue }) {
   let [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 

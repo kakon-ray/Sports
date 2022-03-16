@@ -51,10 +51,6 @@ header .form-control:focus {
   border-bottom: 2px solid rgb(133, 4, 219);
 }
 
-.dropdown-menu[data-bs-popper] {
-  top: 62px;
-}
-
 /* .form-control-navbar {
   position: absolute;
   top: 0;
@@ -119,5 +115,5 @@ header .form-control:focus {
 
 /* customization */
 .dropdown-menu[data-bs-popper] {
-  top: 151%;
+  top: 110%;
 }

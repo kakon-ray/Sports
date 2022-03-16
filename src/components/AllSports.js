@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import CardContainer from "./Card/CardContainer";
-import Nabar from "../components/Nav/Nabar";
+import Nabar from "./Nav/Nabar";
 
 export default function AllSports() {
   const [users, setUser] = useState([]);
@@ -25,7 +25,6 @@ export default function AllSports() {
         <div className="row g-4">
           {usersNum.map((user) => (
             <React.Fragment key={user.idSport}>
-              {console.log(user)}
               <div className="col-md-4">
                 <CardContainer
                   img={user.strSportThumb}
