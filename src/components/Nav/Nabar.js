@@ -54,7 +54,7 @@ export default function Nabar() {
               <FormControl
                 type="search"
                 id="formInput"
-                placeholder="Search Doctor"
+                placeholder="Search Sports"
                 className="me-2 form-control-navbar"
                 aria-label="Search"
               />

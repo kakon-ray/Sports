@@ -9,7 +9,7 @@ export default function CardContainer({ img, title, cardDes }) {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{cardDes}</Card.Text>
-          <Button variant="outline-success">Go somewhere</Button>
+          <Button variant="outline-success">Details Sports</Button>
         </Card.Body>
       </Card>
     </>

@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import CardContainer from "./Card/CardContainer";
 import Loading from "./Loading/Loading";
 import Nabar from "../components/Nav/Nabar";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   let [users, setUsers] = useState([]);
@@ -52,6 +54,11 @@ export default function Home() {
               </div>
             </React.Fragment>
           ))}
+        </div>
+        <div className="d-flex justify-content-center py-5">
+          <Link to="/allsports">
+            <Button variant="outline-success">See All Sports</Button>
+          </Link>
         </div>
       </div>
     </>
