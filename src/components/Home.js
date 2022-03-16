@@ -37,9 +37,9 @@ export default function Home({ searchValue }) {
 
   return (
     <>
-      <Nabar />
-      <div className="container my-5">
-        <div className="row g-4">
+      <div className="container ">
+        <Nabar />
+        <div className="row g-4 mt-4">
           {usersNum?.map((user) => (
             <React.Fragment key={user.idSport}>
               {console.log()}

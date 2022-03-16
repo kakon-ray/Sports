@@ -24,9 +24,9 @@ export default function SearchResult({ value }) {
     (user) => user.strSport?.toLowerCase() === searchVlaue?.toLowerCase()
   );
   return (
-    <div className="container text-center mx-auto my-4">
+    <div className="container text-center mx-auto">
       <Nabar func={pull_data} />
-      <div className="row mt-5">
+      <div className="row g-4 mt-4">
         {userResult.map((user) => (
           <React.Fragment key={user.idSport}>
             <div className="col-md-4">
